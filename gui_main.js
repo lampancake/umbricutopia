@@ -110,7 +110,7 @@ style.textContent = gWindowCSS;
 document.head.appendChild(style);
 
 // Add functionality to the close button (similar to previous example)
-const closeButton = document.getElementById("close-button");
+const closeButton = document.getElementById("closeButton");
 dragElement(document.getElementById("gWindow"));
 
 function dragElement(elmnt) {
