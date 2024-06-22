@@ -1,7 +1,7 @@
-const miniWindowHTML = `
-<div id="mini-window">
+const gWindowHTML = `
+<div id="g-window">
   <div class="header">
-    <h2>GWindow</h2>
+    <h2>gWindow</h2>
     <button id="close-button">X</button>
   </div>
   <div class="content">
@@ -21,8 +21,8 @@ const miniWindowHTML = `
   </div>
 </div>`;
 
-const miniWindowCSS = `
-#mini-window {
+const gWindowCSS = `
+#gWindow {
   width: 300px;
   height: 300px;
   background-color: #fff;
@@ -34,6 +34,10 @@ const miniWindowCSS = `
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  
+  resize: both;
+  overflow: auto;
+
 }
 
 .header {
@@ -85,18 +89,18 @@ a {
 `;
 
 // Create the mini window element
-const miniWindow = document.createElement("div");
-miniWindow.innerHTML = miniWindowHTML;
-document.body.appendChild(miniWindow);
+const gWindow = document.createElement("div");
+gWindow.innerHTML = gWindowHTML;
+document.body.appendChild(gWindow);
 
 // Inject the styles into a style element
 const style = document.createElement("style");
-style.textContent = miniWindowCSS;
+style.textContent = gWindowCSS;
 document.head.appendChild(style);
 
 // Add functionality to the close button (similar to previous example)
 const closeButton = document.getElementById("close-button");
-dragElement(document.getElementById("mini-window"));
+dragElement(document.getElementById("gWindow"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
