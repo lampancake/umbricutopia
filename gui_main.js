@@ -149,8 +149,8 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-closeButton.addEventListener("click", () => {
-  miniWindow.style.display = "none";
+document.getElementById("closeButton").addEventListener("click", function() {
+  document.getElementById("gWindow").style.display = "none";
 });
 // Call the function to make the element draggable
 dragElement(document.getElementById("gWindow"));
