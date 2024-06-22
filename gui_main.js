@@ -6,9 +6,10 @@ const gWindowHTML = `
     </button>
     <button id="closeButton">
     <img>
-
+    
     </img>
     </button>
+    
   </div>
   <div class="content">
     <input type="text" id="searchBar" placeholder="Search...">
@@ -35,9 +36,9 @@ const gWindowCSS = `
   border: 1px solid #ddd;
   border-radius: 5px;
   position: absolute;
-  top: 75%;
-  left: 75%;
-  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
   
@@ -153,6 +154,16 @@ function dragElement(elmnt) {
 }
 document.getElementById("closeButton").addEventListener("click", function() {
   document.getElementById("gWindow").style.display = "none";
+});
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode === 88) { // 88 is the key code for the "x" key
+    const gWindow = document.getElementById("gWindow");
+    if (gWindow.style.display === "none") {
+      gWindow.style.display = "block";
+    } else {
+      gWindow.style.display = "none";
+    }
+  }
 });
 // Call the function to make the element draggable
 dragElement(document.getElementById("gWindow"));
