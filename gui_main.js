@@ -5,16 +5,12 @@ const gWindowHTML = `
     <img class=drag-button-image src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
     </button>
     <button id="closeButton">
-    <img>
-    
-    </img>
+    x
     </button>
     
   </div>
   <div class="content">
-    <canvas id="canvas" style="width:100%;height:100%;position:fixed;left:0;top:0;right:0;bottom:0" width="1024" height="768">
-      Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
-    </canvas>
+    
     <input type="text" id="searchBar" placeholder="Search...">
     <div class="buttons">
       <button>Button 1</button>
