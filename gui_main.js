@@ -96,7 +96,7 @@ document.head.appendChild(style);
 
 // Add functionality to the close button (similar to previous example)
 const closeButton = document.getElementById("close-button");
-dragElement(document.getElementById("miniWindow"));
+dragElement(document.getElementById("mini-window"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
