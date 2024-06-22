@@ -10,7 +10,7 @@ const gWindowHTML = `
     
   </div>
   <div class="content">
-    
+    <iframe src="https://www.crazygames.com/embed/raft-life" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
     <input type="text" id="searchBar" placeholder="Search...">
     <div class="buttons">
       <button>Button 1</button>
