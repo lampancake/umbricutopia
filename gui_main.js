@@ -12,20 +12,7 @@ const gWindowHTML = `
   <div class="content">
     <iframe src="https://www.crazygames.com/embed/raft-life" style="width: 100%; height: 200%;" frameborder="0" allow="gamepad *;"></iframe>
     <input type="text" id="searchBar" placeholder="Search...">
-    <div class="buttons">
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">Menu Item 1</a></li>
-        <li><a href="#">Menu Item 2</a></li>
-        <li><a href="#">Menu Item 3</a></li>
-      </ul>
-    </div>
-  </div>
-</div>`;
+    `;
 const gWindowCSS = `
 #gWindow {
   width: 300px;
@@ -60,22 +47,7 @@ const gWindowCSS = `
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-.buttons {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 0;
-}
-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 .drag-button-image {
   width: 20px; /* adjust the width to your liking */
   height: 20px; /* adjust the height to your liking */
