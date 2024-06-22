@@ -5,7 +5,9 @@ const gWindowHTML = `
     <img class=drag-button-image src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
     </button>
     <button id="closeButton">
-    x
+    <img>
+
+    </img>
     </button>
   </div>
   <div class="content">
@@ -33,9 +35,9 @@ const gWindowCSS = `
   border: 1px solid #ddd;
   border-radius: 5px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 75%;
+  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
   
