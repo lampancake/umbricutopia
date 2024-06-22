@@ -2,10 +2,12 @@ const gWindowHTML = `
 <div id="gWindow">
   <div class="topBarContainer">
     <button id="dragButton">
-    <img id=drag-button-image src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
+    <img class=drag-button-image src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
     </button>
     <button id="closeButton">
-    <img id=close-button-image src=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fhidden_2710718&psig=AOvVaw3XoXagAks4RILXV7Ii7ZMz&ust=1719170967002000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCQzon574YDFQAAAAAdAAAAABAJ></img>
+    <img>
+    
+    </img>
     </button>
     
   </div>
@@ -25,7 +27,6 @@ const gWindowHTML = `
     </div>
   </div>
 </div>`;
-
 const gWindowCSS = `
 #gWindow {
   width: 300px;
@@ -42,9 +43,7 @@ const gWindowCSS = `
   
   resize: both;
   overflow: auto;
-
 }
-
 .topBarContainer {
   display: flex;
   justify-content: space-between;
@@ -52,32 +51,27 @@ const gWindowCSS = `
   margin-bottom: 10px;
   
 }
-
 .content {
   display: flex;
   flex-direction: column;
 }
-
 #searchBar {
   width: 100%;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-
 .buttons {
   display: flex;
   justify-content: space-around;
   margin: 10px 0;
 }
-
 button {
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
 }
-
 .menu {
   list-style: none;
   padding: 0;
@@ -89,43 +83,28 @@ button {
   object-fit: cover; /* scale the image to fit the container */
   border-radius: 50%; /* add a rounded corner effect */
 }
-.close-button-image {
-  width: 20px; /* adjust the width to your liking */
-  height: 20px; /* adjust the height to your liking */
-  object-fit: cover; /* scale the image to fit the container */
-  border-radius: 50%; /* add a rounded corner effect */
-}
-
 .menu li {
   margin-bottom: 5px;
 }
-
 a {
   text-decoration: none;
   color: #333;
 }
 `;
-
 // Create the mini window element
 const gWindow = document.createElement("div");
 gWindow.innerHTML = gWindowHTML;
 document.body.appendChild(gWindow);
-
 // Inject the styles into a style element
 const style = document.createElement("style");
 style.textContent = gWindowCSS;
 document.head.appendChild(style);
-
 // Add functionality to the close button (similar to previous example)
 const closeButton = document.getElementById("closeButton");
-
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   const dragButton = elmnt.querySelector('#dragButton');
-
   dragButton.onmousedown = dragMouseDown;
-
   function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
@@ -136,7 +115,6 @@ function dragElement(elmnt) {
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
   }
-
   function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
@@ -149,7 +127,6 @@ function dragElement(elmnt) {
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
-
   function closeDragElement() {
     // stop moving when mouse button is released:
     document.onmouseup = null;
