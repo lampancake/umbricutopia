@@ -2,12 +2,10 @@ const gWindowHTML = `
 <div id="gWindow">
   <div class="topBarContainer">
     <button id="dragButton">
-    <img class=drag-button-image src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
+    <img src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
     </button>
     <button id="closeButton">
-    <img>
-    
-    </img>
+    <img scr=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fhidden_2710718&psig=AOvVaw3XoXagAks4RILXV7Ii7ZMz&ust=1719170967002000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCQzon574YDFQAAAAAdAAAAABAJ></img>
     </button>
     
   </div>
