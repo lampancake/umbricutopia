@@ -12,6 +12,9 @@ const gWindowHTML = `
     
   </div>
   <div class="content">
+    <canvas id="canvas" style="width:100%;height:100%;position:fixed;left:0;top:0;right:0;bottom:0" width="1024" height="768">
+      Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+    </canvas>
     <input type="text" id="searchBar" placeholder="Search...">
     <div class="buttons">
       <button>Button 1</button>
