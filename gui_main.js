@@ -1,7 +1,7 @@
 const miniWindowHTML = `
 <div id="mini-window">
   <div class="header">
-    <h2>Mini Window</h2>
+    <h2>GWindow</h2>
     <button id="close-button">X</button>
   </div>
   <div class="content">
