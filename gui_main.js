@@ -1,11 +1,15 @@
 const gWindowHTML = `
 <div id="gWindow">
-  <div class="header">
-    <h2>gWindow</h2>
-    <button id="close-button">X</button>
+  <div class="topBarContainer">
+    <button id="dragButton">
+    <img src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
+    </button>
+    <button id="closeButton">
+    x
+    </button>
   </div>
   <div class="content">
-    <input type="text" id="search-bar" placeholder="Search...">
+    <input type="text" id="searchBar" placeholder="Search...">
     <div class="buttons">
       <button>Button 1</button>
       <button>Button 2</button>
@@ -52,7 +56,7 @@ const gWindowCSS = `
   flex-direction: column;
 }
 
-#search-bar {
+#searchBar {
   width: 100%;
   padding: 5px;
   border: 1px solid #ddd;
@@ -104,9 +108,9 @@ dragElement(document.getElementById("gWindow"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
+  if (document.getElementById(elmnt.id + "dragButton")) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.id + "dragButton").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
