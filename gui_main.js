@@ -1,5 +1,5 @@
 const gWindowHTML = `
-<div id="g-window">
+<div id="gWindow">
   <div class="header">
     <h2>gWindow</h2>
     <button id="close-button">X</button>
