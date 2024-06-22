@@ -149,3 +149,6 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+// Call the function to make the element draggable
+dragElement(document.getElementById("gWindow"));
