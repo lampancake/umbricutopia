@@ -2,7 +2,7 @@ const gWindowHTML = `
 <div id="gWindow">
   <div class="topBarContainer">
     <button id="dragButton">
-    <img src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
+    <img class=drag-button-image src=https://t3.ftcdn.net/jpg/06/00/11/62/360_F_600116229_RCeAx0W50KGAXKXibYfYWOvl1CUB8b6D.jpg></img>
     </button>
     <button id="closeButton">
     x
@@ -44,11 +44,12 @@ const gWindowCSS = `
 
 }
 
-.header {
+.topBarContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  
 }
 
 .content {
@@ -80,6 +81,12 @@ button {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.drag-button-image {
+  width: 20px; /* adjust the width to your liking */
+  height: 20px; /* adjust the height to your liking */
+  object-fit: cover; /* scale the image to fit the container */
+  border-radius: 50%; /* add a rounded corner effect */
 }
 
 .menu li {
