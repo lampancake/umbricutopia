@@ -111,7 +111,7 @@ document.head.appendChild(style);
 
 // Add functionality to the close button (similar to previous example)
 const closeButton = document.getElementById("closeButton");
-dragElement(document.getElementById("gWindow"));
+
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -149,6 +149,8 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
+closeButton.addEventListener("click", () => {
+  miniWindow.style.display = "none";
+});
 // Call the function to make the element draggable
 dragElement(document.getElementById("gWindow"));
