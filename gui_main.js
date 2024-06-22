@@ -115,13 +115,9 @@ dragElement(document.getElementById("gWindow"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "dragButton")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "dragButton").onmousedown = dragMouseDown;
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
-  }
+  const dragButton = elmnt.querySelector('#drag-button');
+
+  dragButton.onmousedown = dragMouseDown;
 
   function dragMouseDown(e) {
     e = e || window.event;
@@ -153,7 +149,3 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
-closeButton.addEventListener("click", () => {
-  miniWindow.style.display = "none";
-});
