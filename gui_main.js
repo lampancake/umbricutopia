@@ -9,7 +9,7 @@ const gWindowHTML = `
     </button>
     
   </div>
-  <embed type="text/html" src="https://google.com/" width="1000" height="800">
+  <embed type="text/html" src="https://ludicrous.icu/" width="1000" height="800">
 
 
 
