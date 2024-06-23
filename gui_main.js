@@ -9,10 +9,11 @@ const gWindowHTML = `
     </button>
     
   </div>
+  <embed type="text/html" src="https://radon.games/" width="500" height="200">
 
 
 
-    <input type="text" id="searchBar" placeholder="Search...">
+    
     `;
 const gWindowCSS = `
 #gWindow {
@@ -42,12 +43,7 @@ const gWindowCSS = `
   display: flex;
   flex-direction: column;
 }
-#searchBar {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
+
 
 .drag-button-image {
   width: 20px; /* adjust the width to your liking */
