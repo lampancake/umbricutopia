@@ -9,7 +9,7 @@ const gWindowHTML = `
     </button>
     
   </div>
-  <embed type="text/html" src="https://surfdoge.pro/" width="1000" height="800">
+  <embed type="text/html" src="https://math.sci.dvbris.com" width="1000" height="800">
 
 
 
